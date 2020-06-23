@@ -27,7 +27,7 @@ class Admin::UsersController < ApplicationController
     end
   end
 
-  def upadate
+  def update
     @user = User.find(params[:id])
 
     if @user.update(user_params)
